@@ -57,6 +57,7 @@ const isIE =
         interactionType: InteractionType.Redirect, // MSAL Interceptor Configuration
         protectedResourceMap: new Map([
           ['https://graph.microsoft.com/v1.0/me', ['user.read']],
+          ['https://localhost:7002/GetWeatherForecast', ['api://3421e831-e89b-4bd8-b691-cf8e2f92294a/access_as_user']]
         ]),
       }
     ),

@@ -1,6 +1,7 @@
-<div>
-  <p><strong>First Name: </strong> {{profile?.givenName}}</p>
-  <p><strong>Last Name: </strong> {{profile?.surname}}</p>
-  <p><strong>Email: </strong> {{profile?.userPrincipalName}}</p>
-  <p><strong>Id: </strong> {{profile?.id}}</p>
-</div>
+
+  <div *ngFor="let profile of profiles">
+    <p><strong>Last Name: </strong> {{profile?.temperatureC}}</p>
+    <p><strong>Email: </strong> {{profile?.temperatureF}}</p>
+    <p><strong>Id: </strong> {{profile?.summary}}</p>
+  </div>
+

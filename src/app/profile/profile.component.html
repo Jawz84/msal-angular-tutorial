@@ -1,7 +1,9 @@
 
   <div *ngFor="let profile of profiles">
-    <p><strong>Last Name: </strong> {{profile?.temperatureC}}</p>
-    <p><strong>Email: </strong> {{profile?.temperatureF}}</p>
-    <p><strong>Id: </strong> {{profile?.summary}}</p>
+    <p><strong>Date: </strong> {{profile?.date | date}}</p>
+    <p><strong>Temperature C: </strong> {{profile?.temperatureC}}</p>
+    <!-- <p><strong>Email: </strong> {{profile?.temperatureF}}</p> -->
+    <p><strong>Summary: </strong> {{profile?.summary}}</p>
+    <br>
   </div>
 
